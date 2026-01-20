@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visibility for Lobbying Firms | ChatGPT & LLM Optimization | Monic AI Systems</title>
+    <meta name="description" content="Turn your DC reputation into AI-era visibility. Get recommended when executives ask ChatGPT for lobbying firm recommendations. Specialized service for government relations firms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --deep-blue: #1a2942;
+            --gold: #d4af37;
+            --cream: #faf8f3;
+            --slate: #64748b;
+            --light-slate: #94a3b8;
+            --red: #dc2626;
+            --gradient-start: #0a1628;
+            --gradient-end: #1e3a5f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: var(--cream);
+            color: var(--navy);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: var(--cream);
+            padding: 80px 20px 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: var(--cream);
+            clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            font-family: 'Fraunces', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        h1 .highlight {
+            color: var(--gold);
+            display: block;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            max-width: 800px;
+            margin-bottom: 40px;
+            color: var(--light-slate);
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--gold);
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .cta-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Visual Demo Section */
+        .demo-section {
+            background: white;
+            padding: 80px 20px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .demo-box {
+            background: var(--cream);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--slate);
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .demo-box.after {
+            border-left-color: var(--gold);
+        }
+
+        .demo-label {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: var(--slate);
+        }
+
+        .demo-box.after .demo-label {
+            color: var(--gold);
+        }
+
+        .demo-content {
+            font-size: 16px;
+            color: var(--navy);
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .no-result {
+            color: var(--red);
+            font-weight: 500;
+        }
+
+        .firm-mention {
+            background: linear-gradient(120deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0) 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--navy) 100%);
+            color: var(--cream);
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .problem-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: white;
+            clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+        }
+
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        h2 .underline {
+            border-bottom: 4px solid var(--gold);
+            padding-bottom: 5px;
+        }
+
+        .problem-intro {
+            font-size: 20px;
+            max-width: 800px;
+            margin-bottom: 50px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .problem-list {
+            list-style: none;
+            max-width: 900px;
+        }
+
+        .problem-list li {
+            padding: 25px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--gold);
+            border-radius: 4px;
+            font-size: 18px;
+            animation: slideInLeft 0.6s ease-out both;
+        }
+
+        .problem-list li:nth-child(1) { animation-delay: 0.1s; }
+        .problem-list li:nth-child(2) { animation-delay: 0.2s; }
+        .problem-list li:nth-child(3) { animation-delay: 0.3s; }
+
+        .problem-list strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .result-callout {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(220, 38, 38, 0.1);
+            border: 2px solid var(--red);
+            border-radius: 8px;
+            color: var(--cream);
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: var(--cream);
+            padding: 100px 20px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out both;
+        }
+
+        .solution-card:nth-child(1) { animation-delay: 0.1s; }
+        .solution-card:nth-child(2) { animation-delay: 0.2s; }
+        .solution-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .solution-number {
+            font-family: 'Fraunces', serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .solution-card h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+
+        .solution-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .solution-card li {
+            padding-left: 25px;
+            margin-bottom: 12px;
+            position: relative;
+            color: var(--slate);
+            font-size: 16px;
+        }
+
+        .solution-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        /* Who This Is For Section */
+        .who-section {
+            background: white;
+            padding: 100px 20px;
+        }
+
+        .checklist {
+            max-width: 800px;
+            margin: 50px auto 0;
+            display: grid;
+            gap: 20px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: var(--cream);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.5s ease-out both;
+        }
+
+        .checklist-item:nth-child(1) { animation-delay: 0.1s; }
+        .checklist-item:nth-child(2) { animation-delay: 0.15s; }
+        .checklist-item:nth-child(3) { animation-delay: 0.2s; }
+        .checklist-item:nth-child(4) { animation-delay: 0.25s; }
+        .checklist-item:nth-child(5) { animation-delay: 0.3s; }
+        .checklist-item:nth-child(6) { animation-delay: 0.35s; }
+
+        .checklist-item:hover {
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .check-icon {
+            font-size: 32px;
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .checklist-text {
+            font-size: 18px;
+            color: var(--navy);
+            line-height: 1.6;
+        }
+
+        .cta-secondary {
+            display: inline-block;
+            background: transparent;
+            color: var(--navy);
+            padding: 16px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            border: 2px solid var(--navy);
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            background: var(--navy);
+            color: var(--cream);
+        }
+
+        /* Proof Section */
+        .proof-section {
+            background: var(--cream);
+            padding: 100px 20px;
+        }
+
+        .proof-grid {
+            display: grid;
+            gap: 50px;
+            margin-top: 60px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .proof-item {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            animation: fadeInUp 0.6s ease-out both;
+        }
+
+        .proof-item:nth-child(1) { animation-delay: 0.1s; }
+        .proof-item:nth-child(2) { animation-delay: 0.2s; }
+        .proof-item:nth-child(3) { animation-delay: 0.3s; }
+
+        .proof-label {
+            font-family: 'Fraunces', serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .before-after {
+            display: grid;
+            gap: 30px;
+        }
+
+        .ba-item {
+            padding: 20px;
+            background: var(--cream);
+            border-radius: 6px;
+            border-left: 4px solid var(--slate);
+        }
+
+        .ba-item.after-state {
+            border-left-color: var(--gold);
+            background: linear-gradient(120deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+        }
+
+        .ba-tag {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: var(--slate);
+        }
+
+        .ba-item.after-state .ba-tag {
+            color: var(--gold);
+        }
+
+        .ba-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--navy);
+        }
+
+        /* How It Works Section */
+        .process-section {
+            background: white;
+            padding: 100px 20px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 60px auto 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gold);
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            position: relative;
+            animation: fadeInLeft 0.6s ease-out both;
+        }
+
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .timeline-marker {
+            width: 100px;
+            height: 100px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fraunces', serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--navy);
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding-top: 10px;
+        }
+
+        .timeline-title {
+            font-family: 'Fraunces', serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+
+        .timeline-desc {
+            font-size: 16px;
+            color: var(--slate);
+            line-height: 1.8;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: var(--cream);
+            padding: 100px 20px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 8px;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out both;
+        }
+
+        .pricing-card:nth-child(1) { animation-delay: 0.1s; }
+        .pricing-card:nth-child(2) { animation-delay: 0.2s; border: 2px solid var(--gold); }
+        .pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .pricing-tier {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .pricing-name {
+            font-family: 'Fraunces', serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .pricing-amount {
+            font-family: 'Fraunces', serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--gold);
+            margin-bottom: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .recommended {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            padding: 100px 20px;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 60px auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 30px;
+            background: var(--cream);
+            border-radius: 8px;
+            animation: fadeInUp 0.5s ease-out both;
+        }
+
+        .faq-item:nth-child(1) { animation-delay: 0.1s; }
+        .faq-item:nth-child(2) { animation-delay: 0.15s; }
+        .faq-item:nth-child(3) { animation-delay: 0.2s; }
+        .faq-item:nth-child(4) { animation-delay: 0.25s; }
+
+        .faq-question {
+            font-family: 'Fraunces', serif;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: var(--slate);
+            line-height: 1.8;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--navy) 100%);
+            color: var(--cream);
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            margin-bottom: 30px;
+        }
+
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: var(--light-slate);
+        }
+
+        .trust-icon {
+            color: var(--gold);
+            font-size: 24px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 25px;
+            }
+
+            .timeline-marker {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .timeline-item {
+                gap: 20px;
+            }
+
+            .trust-signals {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="logo">MONIC AI SYSTEMS</div>
+            <h1>
+                Your Firm Handles Energy, Financial Services, and Tech Policy—
+                <span class="highlight">But When Clients Ask AI "Who Should I Hire?" You're Invisible</span>
+            </h1>
+            <p>Washington's top lobbying firms are invisible in AI-powered search. We turn your DC reputation into AI-era visibility so ChatGPT, Claude, and Perplexity recommend your firm first.</p>
+            <a href="#contact" class="cta-primary">Request Your Free AI Visibility Audit</a>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--navy); margin-bottom: 20px;">The Gap You Can't Afford to Ignore</h2>
+            <p style="text-align: center; color: var(--slate); font-size: 18px; max-width: 700px; margin: 0 auto 60px;">When we asked ChatGPT: <em>"Which bipartisan lobbying firm should I hire for energy policy and appropriations strategy in DC?"</em></p>
+            
+            <div class="demo-grid">
+                <div class="demo-box">
+                    <div class="demo-label">❌ Before: Your Firm Today</div>
+                    <div class="demo-content">
+                        "For bipartisan lobbying in DC, consider firms like Akin Gump Strauss Hauer & Feld, Brownstein Hyatt Farber Schreck, or Holland & Knight..."
+                        <br><br>
+                        <span class="no-result">Your firm: Not mentioned.</span>
+                    </div>
+                </div>
+                
+                <div class="demo-box after">
+                    <div class="demo-label">✓ After: AI-Optimized Visibility</div>
+                    <div class="demo-content">
+                        "For bipartisan energy policy and appropriations work, <span class="firm-mention">SMART Policy Group</span> specializes in moderate-driven solutions for clean tech, biofuel, and infrastructure clients, with proven appropriations outcomes and deep Hill relationships. Other options include..."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2><span class="underline">The Shift No One in K Street</span> is Talking About</h2>
+            
+            <p class="problem-intro">
+                Your federal lobbying disclosures are public. Your partners have decades of Hill experience. Your clients trust you.
+                <br><br>
+                But when a Fortune 500 executive asks their AI assistant which firm to hire for energy, financial services, or tech policy—your firm doesn't appear in the answer.
+            </p>
+
+            <ul class="problem-list">
+                <li><strong>Your website reads like a traditional DC firm</strong> — Résumé-style bios, generic "experience" language, no structured thought leadership that AI models can extract and cite.</li>
+                <li><strong>Your content isn't structured for LLMs</strong> — AI models can't clearly identify who you serve, what problems you solve, or what outcomes you've delivered because your positioning is implied, not explicit.</li>
+                <li><strong>You're not publishing ongoing expert analysis</strong> — No regular policy briefs, issue explainers, or regulatory commentary that demonstrate current expertise and give AI models fresh signals to cite.</li>
+            </ul>
+
+            <div class="result-callout">
+                The result: You're discoverable in OpenSecrets and LegiStorm—but not recommended when it matters most.
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="section-subtitle">The Solution</div>
+            <h2>The AI Visibility Blueprint for Government Relations Firms</h2>
+            <p style="font-size: 20px; color: var(--slate); max-width: 800px; margin-bottom: 20px;">
+                We restructure what you already have so AI models recognize you as the go-to expert for the issues you already own.
+            </p>
+
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <h3>AI Visibility Audit</h3>
+                    <ul>
+                        <li>Where your firm currently appears (or doesn't) in ChatGPT, Claude, Perplexity, and SearchGPT</li>
+                        <li>Gap analysis: what AI models see vs. what they need to recommend you</li>
+                        <li>Competitive benchmark: which firms in your space are showing up</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <h3>Content Restructuring</h3>
+                    <ul>
+                        <li>Core pages rewritten in AI-optimized, entity-rich language (home, philosophy, issue areas, bios)</li>
+                        <li>Ideal client profiles and outcomes made explicit (not implied)</li>
+                        <li>Thought leadership framework: policy briefs, issue explainers, and regulatory commentary in Q&A format that AI can cite</li>
+                        <li>Automated content engineering with 5-stage optimization for maximum AI visibility</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <h3>Authority Amplification</h3>
+                    <ul>
+                        <li>Thought leadership framework: position partners as go-to experts on key policy issues</li>
+                        <li>Structured case narratives: "Helped [client type] secure [outcome] through [process]"</li>
+                        <li>Ongoing content calendar: issue briefs, policy explainers, regulatory updates</li>
+                        <li>Multi-platform distribution: owned site, Google Business Profile, press releases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For -->
+    <section class="who-section">
+        <div class="container">
+            <div class="section-subtitle" style="text-align: center;">Who This Is For</div>
+            <h2 style="text-align: center;">Built for Boutique & Mid-Sized Government Relations Firms</h2>
+
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">You have 3–15 team members with deep DC experience</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">You specialize in 2–4 policy areas (energy, environment, financial services, tech, infrastructure, appropriations)</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">You have $500K–$5M in annual lobbying revenue</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">Your clients are mid-market to enterprise (corporations, trade associations, coalitions)</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">You're bipartisan, moderate-focused, or known for specific outcomes (not a generalist mega-firm)</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-text">Your reputation is strong in DC—but you're losing business to firms that show up in AI search</div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="#contact" class="cta-secondary">Not Sure if This Applies? Request a Free Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="proof-section">
+        <div class="container">
+            <div class="section-subtitle" style="text-align: center;">What AI Visibility Looks Like in Practice</div>
+            <h2 style="text-align: center;">Real Transformations</h2>
+
+            <div class="proof-grid">
+                <div class="proof-item">
+                    <div class="proof-label">Example 1: Homepage Copy</div>
+                    <div class="before-after">
+                        <div class="ba-item">
+                            <div class="ba-tag">Before</div>
+                            <div class="ba-text">"We provide strategic government relations services across multiple sectors."</div>
+                        </div>
+                        <div class="ba-item after-state">
+                            <div class="ba-tag">After</div>
+                            <div class="ba-text">"We help clean energy companies, biofuel producers, and infrastructure developers secure federal appropriations, navigate EPA regulations, and build bipartisan coalitions—delivering $47M+ in funding outcomes for mid-market clients since 2020."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proof-item">
+                    <div class="proof-label">Example 2: Partner Bio</div>
+                    <div class="before-after">
+                        <div class="ba-item">
+                            <div class="ba-tag">Before</div>
+                            <div class="ba-text">"25 years of experience on Capitol Hill."</div>
+                        </div>
+                        <div class="ba-item after-state">
+                            <div class="ba-tag">After</div>
+                            <div class="ba-text">"Former House Appropriations Committee staffer who helped secure $47M in rural broadband funding for telecom clients and navigated 12 successful EPA regulatory comment periods for energy sector associations."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proof-item">
+                    <div class="proof-label">Example 3: AI Visibility</div>
+                    <div class="before-after">
+                        <div class="ba-item">
+                            <div class="ba-tag">Before</div>
+                            <div class="ba-text">ChatGPT doesn't mention the firm at all when asked about bipartisan lobbying for clean energy appropriations.</div>
+                        </div>
+                        <div class="ba-item after-state">
+                            <div class="ba-tag">After</div>
+                            <div class="ba-text">When asked "bipartisan lobbying firm for clean energy appropriations," ChatGPT surfaces the firm by name in top 3 recommendations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-subtitle" style="text-align: center;">The Process</div>
+            <h2 style="text-align: center;">From Invisible to Recommended in 90 Days</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Week 1–2: Discovery & Audit</div>
+                        <div class="timeline-desc">Analyze current footprint across LLMs, web, and social → Identify highest-value positioning opportunities → Benchmark against 3–5 competitor firms</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Week 3–6: Core Content Restructuring</div>
+                        <div class="timeline-desc">Rewrite homepage, philosophy, issue area pages → Rebuild partner bios with outcome-driven narratives → Create 3–5 foundational thought leadership pieces (policy briefs, Q&A format, AI-optimized for citation)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Week 7–10: Authority Distribution</div>
+                        <div class="timeline-desc">Publish thought leadership content across owned channels → Distribute via GBP, press releases, and social → Begin ongoing editorial calendar (policy briefs, issue explainers, regulatory updates)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Week 11–12: Validation & Iteration</div>
+                        <div class="timeline-desc">Re-test LLM visibility → Refine positioning based on early signals → Deliver final visibility report + ongoing roadmap</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-subtitle" style="text-align: center;">Investment</div>
+            <h2 style="text-align: center; color: var(--cream);">Three Tiers to Get Started</h2>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-name">Foundation</div>
+                    <div class="pricing-amount">$750<span style="font-size: 18px; font-weight: 400;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Website restructured so AI can understand and cite your expertise</li>
+                        <li>Core pages rewritten with clear positioning and outcomes</li>
+                        <li>Local presence optimization (Google, directories, maps)</li>
+                        <li>Press release distribution to build citation coverage</li>
+                        <li>Automated thought leadership content (policy briefs, issue explainers)</li>
+                        <li>Social media calendar aligned to your expertise</li>
+                        <li>Monthly visibility tracking and reports</li>
+                        <li>Strategy calls as needed</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <span class="recommended">Most Popular</span>
+                    <div class="pricing-tier">Plus</div>
+                    <div class="pricing-name">Enhanced Visibility</div>
+                    <div class="pricing-amount">$999<span style="font-size: 18px; font-weight: 400;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li><strong>Everything in Starter, Plus:</strong></li>
+                        <li>Deeper optimization across all major AI platforms</li>
+                        <li>Broader web presence across AI-visible platforms</li>
+                        <li>Expanded press release distribution and citation network</li>
+                        <li>More aggressive content publishing schedule</li>
+                        <li>Enhanced authority-building across multiple channels</li>
+                        <li>Faster path to becoming the recommended firm</li>
+                        <li>Priority support and faster response times</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-tier">Growth</div>
+                    <div class="pricing-name">Market Leadership</div>
+                    <div class="pricing-amount">$1,500<span style="font-size: 18px; font-weight: 400;">/month</span></div>
+                    <ul class="pricing-features">
+                        <li><strong>Everything in Plus, Plus:</strong></li>
+                        <li>Maximum coverage across all AI platforms and search engines</li>
+                        <li>Supplemental web presence to reinforce authority signals</li>
+                        <li>Guest posts and publisher relationships for broader reach</li>
+                        <li>Premium press release distribution and media placement</li>
+                        <li>Highest-velocity content and distribution strategy</li>
+                        <li>Comprehensive citation and authority network</li>
+                        <li>Fastest timeline to market-leading visibility</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="text-align: center; color: var(--light-slate); margin-top: 40px; font-size: 16px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <strong>12-Month Commitment Available:</strong> Lock in your rate and accelerate results with our annual engagement. Includes quarterly strategy reviews and priority support.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-subtitle" style="text-align: center;">Frequently Asked Questions</div>
+            <h2 style="text-align: center;">What You Need to Know</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Q: How do you measure whether this is working?</div>
+                    <div class="faq-answer">A: We run live tests in ChatGPT, Claude, Perplexity, and SearchGPT before and after, using queries your ideal clients would actually ask. You'll see side-by-side comparisons showing where your firm appears (or doesn't) and how recommendations change.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: Will this help with Google SEO too?</div>
+                    <div class="faq-answer">A: Yes—AI-optimized content is also human-optimized. Clearer positioning, better structure, and outcome-driven narratives improve both LLM visibility and traditional search rankings.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: How is this different from traditional PR or marketing?</div>
+                    <div class="faq-answer">A: PR gets you mentioned; marketing gets you traffic. AI visibility gets you recommended—which is how decision-makers find firms now. We're restructuring what you already have so LLMs can recognize and surface your expertise.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q: Do we need to keep paying you forever?</div>
+                    <div class="faq-answer">A: The monthly service is ongoing because AI visibility requires consistent content signals and technical maintenance. However, you can pause or cancel anytime after the initial 90-day setup period. For clients who want maximum results, we recommend a 12-month commitment to fully establish your AI presence and see sustained visibility gains.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="final-cta-content">
+            <h2>See Where Your Firm Shows Up (or Doesn't) in AI Search Today</h2>
+            <p>Book a free 20-minute AI visibility audit. We'll run live tests in ChatGPT and other LLM tools using queries your ideal clients are actually asking, then show you exactly what needs to change.</p>
+            <a href="https://monicaisystems.com/book" class="cta-primary">Request Your Free Audit</a>
+            
+            <div class="trust-signals">
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>No credit card required</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Results delivered live on the call</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Built for boutique DC firms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
